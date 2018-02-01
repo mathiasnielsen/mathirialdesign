@@ -35,4 +35,17 @@
         </menu>
     </item>
 
+    <item android:title="Android studio examples">
+        <menu>
+            <item
+                android:id="@+id/nav_scrolling"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Scrolling" />
+            <item
+                android:id="@+id/nav_bottom_nav"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Bottom navigation" />
+        </menu>
+    </item>
+
 </menu>
