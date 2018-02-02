@@ -22,19 +22,6 @@
             android:title="Tools" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
-
     <item android:title="Android studio examples">
         <menu>
             <item
@@ -45,6 +32,27 @@
                 android:id="@+id/nav_bottom_nav"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Bottom navigation" />
+            <item
+                android:id="@+id/nav_master_details"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Master details" />
+            <item
+                android:id="@+id/nav_tabbed_pager"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tabbed pager" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
         </menu>
     </item>
 

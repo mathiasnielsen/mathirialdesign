@@ -95,17 +95,20 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_share:
                 break;
 
-            case R.id.nav_send:
-                // Not working
-                //NavigateToPage(ItemDetailActivity.class);
-                break;
-
             case R.id.nav_scrolling:
                 NavigateToPage(ScrollingActivity.class);
                 break;
 
             case R.id.nav_bottom_nav:
                 NavigateToPage(MainActivity.class);
+                break;
+
+            case R.id.nav_master_details:
+                NavigateToPage(ItemListActivity.class);
+                break;
+
+            case R.id.nav_tabbed_pager:
+                //NavigateToPage(ItemListActivity.class);
                 break;
         }
 
