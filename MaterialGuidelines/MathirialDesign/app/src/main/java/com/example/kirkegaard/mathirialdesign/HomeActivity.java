@@ -108,7 +108,7 @@ public class HomeActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_tabbed_pager:
-                //NavigateToPage(ItemListActivity.class);
+                NavigateToPage(PagerActivity.class);
                 break;
         }
 
