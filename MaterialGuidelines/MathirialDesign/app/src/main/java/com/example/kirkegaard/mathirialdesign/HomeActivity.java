@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,6 +44,15 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        final Button revealButton = (Button)findViewById(R.id.reveal_button);
+        revealButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view)
+            {
+                NavigateWithReveal(view);
+            }
+        });
     }
 
     @Override
@@ -128,5 +140,23 @@ public class HomeActivity extends AppCompatActivity
     {
         Intent intent = new Intent(this, activityClass);
         this.startActivity(intent);
+    }
+
+    private void NavigateWithReveal(View view)
+    {
+        ActivityOptionsCompat options = ActivityOptionsCompat
+                .makeSceneTransitionAnimation(
+                        this,
+                        view,
+                        "transition");
+
+        int revalX = (int)(view.getX() + view.getWidth() / 2);
+        int revalY = (int)(view.getY() + view.getHeight() / 2);
+
+        Intent intent = new Intent(this, RevealActivity.class);
+        intent.putExtra(RevealActivity.EXTRA_CIRCULAR_REVEAL_X, revalX);
+        intent.putExtra(RevealActivity.EXTRA_CIRCULAR_REVEAL_Y, revalY);
+
+        ActivityCompat.startActivity(this, intent, options.toBundle());
     }
 }
