@@ -1,6 +1,5 @@
 package com.example.kirkegaard.mathirialdesign;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
@@ -107,8 +106,16 @@ public class HomeActivity extends AppCompatActivity
                 NavigateToPage(ItemListActivity.class);
                 break;
 
+            case R.id.nav_fullscreen:
+                NavigateToPage(FullscreenActivity.class);
+                break;
+
             case R.id.nav_tabbed_pager:
                 NavigateToPage(PagerActivity.class);
+                break;
+
+            case R.id.nav_dropdown_pager:
+                NavigateToPage(DropdownPager.class);
                 break;
         }
 
