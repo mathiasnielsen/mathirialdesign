@@ -93,6 +93,7 @@ public class RevealActivity extends AppCompatActivity {
                 public void onAnimationEnd(Animator animation) {
                     rootLayout.setVisibility(View.INVISIBLE);
                     finish();
+                    overridePendingTransition(0, 0);
                 }
             });
 
