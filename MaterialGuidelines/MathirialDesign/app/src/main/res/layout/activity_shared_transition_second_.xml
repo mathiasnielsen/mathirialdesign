@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kirkegaard.mathirialdesign.SharedTransitionSecond_Activity">
+
+    <ImageView
+        android:id="@+id/simple_activity_b_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_camera"
+        android:contentDescription="camera image"
+        android:transitionName="simple_activity_transition"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/simple_activity_b_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/simple_activity_b_image"
+        android:padding="16dp"
+        android:text="This is an image of a camera" />
+</android.support.constraint.ConstraintLayout>

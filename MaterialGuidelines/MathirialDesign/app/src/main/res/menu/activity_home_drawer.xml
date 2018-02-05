@@ -40,6 +40,14 @@
                 android:id="@+id/nav_fullscreen"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Fullscreen" />
+            <item
+                android:id="@+id/nav_shared_transaction"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Shared transition" />
+            <item
+                android:id="@+id/nav_fragments_shared_transaction"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Fragment shared transition" />
         </menu>
     </item>
 

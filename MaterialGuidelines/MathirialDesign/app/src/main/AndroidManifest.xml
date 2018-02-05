@@ -54,8 +54,17 @@
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".RevealActivity"
-            android:theme="@style/AppTheme.Transparent">
-        </activity>
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".SharedTransitionActivity"
+            android:theme="@style/AppTheme.SharedTransition" />
+        <activity
+            android:name=".SharedTransitionSecond_Activity"
+            android:theme="@style/AppTheme.SharedTransition" />
+        <activity
+            android:name=".FragmentSharedTransactionActivity"
+            android:theme="@style/AppTheme.SharedTransition"
+            />
     </application>
 
 </manifest>

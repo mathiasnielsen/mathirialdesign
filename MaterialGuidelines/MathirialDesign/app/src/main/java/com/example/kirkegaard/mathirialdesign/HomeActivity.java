@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -129,6 +130,14 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_dropdown_pager:
                 NavigateToPage(DropdownPager.class);
                 break;
+
+            case R.id.nav_shared_transaction:
+                NavigateToPage(SharedTransitionActivity.class);
+                break;
+
+            case R.id.nav_fragments_shared_transaction:
+                NavigateToPage(FragmentSharedTransactionActivity.class);
+                break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -150,8 +159,14 @@ public class HomeActivity extends AppCompatActivity
                         view,
                         "transition");
 
-        int revalX = (int)(view.getX() + view.getWidth() / 2);
-        int revalY = (int)(view.getY() + view.getHeight() / 2);
+        int[] locationOnScreen = new int[2];
+        view.getLocationInWindow(locationOnScreen);
+
+        int revalX = (int)(locationOnScreen[0] + view.getWidth() / 2);
+        int revalY = (int)(locationOnScreen[1] + view.getHeight() / 2);
+
+        //int revalX = (int)(view.getX() + view.getWidth() / 2);
+        //int revalY = (int)(view.getY() + view.getHeight() / 2);
 
         Intent intent = new Intent(this, RevealActivity.class);
         intent.putExtra(RevealActivity.EXTRA_CIRCULAR_REVEAL_X, revalX);

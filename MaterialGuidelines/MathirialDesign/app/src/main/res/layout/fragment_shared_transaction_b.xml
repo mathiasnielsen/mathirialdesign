@@ -1,0 +1,24 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kirkegaard.mathirialdesign.SharedTransactionBFragment">
+
+    <ImageView
+        android:id="@+id/fragment_b_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_camera"
+        android:contentDescription="camera image"
+        android:transitionName="simple_fragment_transition"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/fragment_b_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="This is a camera in fragment B" />
+
+</android.support.constraint.ConstraintLayout>

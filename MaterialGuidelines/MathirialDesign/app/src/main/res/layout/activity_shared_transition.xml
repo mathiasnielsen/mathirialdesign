@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.kirkegaard.mathirialdesign.HomeActivity"
-    tools:showIn="@layout/app_bar_home">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Android easy mode!"
+    tools:context="com.example.kirkegaard.mathirialdesign.SharedTransitionActivity">
+    <ImageView
+        android:id="@+id/simple_activity_a_imageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:layout_marginBottom="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_camera"
+        android:transitionName="simple_activity_transition"
+        tools:ignore="UnusedAttribute" />
     <Button
-        android:id="@+id/reveal_button"
-        android:text="Go to reveal"
+        android:id="@+id/startTransitionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Go to activity"/>
 </android.support.constraint.ConstraintLayout>

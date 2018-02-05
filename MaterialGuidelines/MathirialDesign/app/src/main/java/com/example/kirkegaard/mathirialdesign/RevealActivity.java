@@ -3,6 +3,7 @@ package com.example.kirkegaard.mathirialdesign;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
