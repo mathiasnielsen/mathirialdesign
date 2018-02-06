@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.MasterDetail.dummy;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.kirkegaard.mathirialdesign.dummy.DummyContent;
+import com.example.kirkegaard.mathirialdesign.R;
 
 import java.util.List;
 

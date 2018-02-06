@@ -1,7 +1,5 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.Transactions;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +9,8 @@ import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.kirkegaard.mathirialdesign.R;
 
 
 /**

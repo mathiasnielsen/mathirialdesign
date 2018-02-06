@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.Transactions;
 
 import android.content.Intent;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -9,12 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class SharedTransitionActivity extends AppCompatActivity {
+import com.example.kirkegaard.mathirialdesign.R;
+
+public class SharedTransactionAActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shared_transition);
+        setContentView(R.layout.activity_shared_transaction_a);
 
         final ImageView imageView = (ImageView)findViewById(R.id.simple_activity_a_imageView);
 
@@ -23,10 +25,10 @@ public class SharedTransitionActivity extends AppCompatActivity {
         {
             public void onClick(View view)
             {
-                Intent intent = new Intent(SharedTransitionActivity.this, SharedTransitionSecond_Activity.class);
+                Intent intent = new Intent(SharedTransactionAActivity.this, SharedTransactionBActivity.class);
                 ActivityOptionsCompat options = ActivityOptionsCompat.
                         makeSceneTransitionAnimation(
-                                SharedTransitionActivity.this,
+                                SharedTransactionAActivity.this,
                                 imageView,
                                 ViewCompat.getTransitionName(imageView));
                 startActivity(intent, options.toBundle());

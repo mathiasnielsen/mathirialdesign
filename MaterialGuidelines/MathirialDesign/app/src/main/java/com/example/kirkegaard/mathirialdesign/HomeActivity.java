@@ -6,7 +6,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +16,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+
+import com.example.kirkegaard.mathirialdesign.MasterDetail.dummy.ItemListActivity;
+import com.example.kirkegaard.mathirialdesign.Pagers.PagerDropdownActivity;
+import com.example.kirkegaard.mathirialdesign.Pagers.PagerTabStripActivity;
+import com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionFragmentHolderActivity;
+import com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionAActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -112,7 +117,7 @@ public class HomeActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_bottom_nav:
-                NavigateToPage(MainActivity.class);
+                NavigateToPage(BottomNavigationActivity.class);
                 break;
 
             case R.id.nav_master_details:
@@ -124,19 +129,19 @@ public class HomeActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_tabbed_pager:
-                NavigateToPage(PagerActivity.class);
+                NavigateToPage(PagerTabStripActivity.class);
                 break;
 
             case R.id.nav_dropdown_pager:
-                NavigateToPage(DropdownPager.class);
+                NavigateToPage(PagerDropdownActivity.class);
                 break;
 
             case R.id.nav_shared_transaction:
-                NavigateToPage(SharedTransitionActivity.class);
+                NavigateToPage(SharedTransactionAActivity.class);
                 break;
 
             case R.id.nav_fragments_shared_transaction:
-                NavigateToPage(FragmentSharedTransactionActivity.class);
+                NavigateToPage(SharedTransactionFragmentHolderActivity.class);
                 break;
         }
 

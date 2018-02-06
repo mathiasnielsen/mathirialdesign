@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.Pagers;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -19,7 +19,9 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class PagerActivity extends AppCompatActivity {
+import com.example.kirkegaard.mathirialdesign.R;
+
+public class PagerTabStripActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +41,7 @@ public class PagerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pager);
+        setContentView(R.layout.activity_pager_tabstrib);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -118,7 +120,7 @@ public class PagerActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_pager, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_pager_tabstrib, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;

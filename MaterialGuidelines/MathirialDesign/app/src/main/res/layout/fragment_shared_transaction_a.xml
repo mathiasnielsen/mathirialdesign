@@ -1,8 +1,8 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kirkegaard.mathirialdesign.SharedTransactionA">
+    tools:context="com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionAFragment">
 
     <ImageView
         android:id="@+id/fragment_a_imageView"
@@ -26,4 +26,4 @@
         android:layout_marginBottom="24dp"
         android:text="Make transaction" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

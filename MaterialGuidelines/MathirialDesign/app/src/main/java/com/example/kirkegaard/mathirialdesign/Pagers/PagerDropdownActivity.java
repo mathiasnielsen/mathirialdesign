@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.Pagers;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,12 +22,14 @@ import android.content.res.Resources.Theme;
 
 import android.widget.TextView;
 
-public class DropdownPager extends AppCompatActivity {
+import com.example.kirkegaard.mathirialdesign.R;
+
+public class PagerDropdownActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dropdown_pager);
+        setContentView(R.layout.activity_pager_dropdown);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -159,7 +161,7 @@ public class DropdownPager extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_dropdown_pager, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_pager_dropdown, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;

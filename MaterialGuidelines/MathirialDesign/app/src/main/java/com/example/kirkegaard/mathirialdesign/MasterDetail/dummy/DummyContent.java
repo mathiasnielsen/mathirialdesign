@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.dummy;
+package com.example.kirkegaard.mathirialdesign.MasterDetail.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

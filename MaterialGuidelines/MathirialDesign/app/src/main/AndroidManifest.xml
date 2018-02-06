@@ -24,27 +24,27 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".BottomNavigationActivity"
             android:label="@string/title_activity_main" />
         <activity
-            android:name=".ItemListActivity"
+            android:name=".MasterDetail.dummy.ItemListActivity"
             android:label="@string/title_item_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ItemDetailActivity"
+            android:name=".MasterDetail.dummy.ItemDetailActivity"
             android:label="@string/title_item_detail"
-            android:parentActivityName=".ItemListActivity"
+            android:parentActivityName=".MasterDetail.dummy.ItemListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.kirkegaard.mathirialdesign.ItemListActivity" />
+                android:value="com.example.kirkegaard.mathirialdesign.MasterDetail.dummy.ItemListActivity" />
         </activity>
         <activity
-            android:name=".PagerActivity"
+            android:name=".Pagers.PagerTabStripActivity"
             android:label="@string/title_activity_pager"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DropdownPager"
+            android:name=".Pagers.PagerDropdownActivity"
             android:label="@string/title_activity_dropdown_pager"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -56,13 +56,13 @@
             android:name=".RevealActivity"
             android:theme="@style/AppTheme.Transparent" />
         <activity
-            android:name=".SharedTransitionActivity"
+            android:name=".Transactions.SharedTransactionAActivity"
             android:theme="@style/AppTheme.SharedTransition" />
         <activity
-            android:name=".SharedTransitionSecond_Activity"
+            android:name=".Transactions.SharedTransactionBActivity"
             android:theme="@style/AppTheme.SharedTransition" />
         <activity
-            android:name=".FragmentSharedTransactionActivity"
+            android:name=".Transactions.SharedTransactionFragmentHolderActivity"
             android:theme="@style/AppTheme.SharedTransition"
             />
     </application>

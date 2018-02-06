@@ -1,8 +1,9 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kirkegaard.mathirialdesign.SharedTransactionBFragment">
+    android:orientation="vertical"
+    tools:context="com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionBFragment">
 
     <ImageView
         android:id="@+id/fragment_b_image"
@@ -21,4 +22,4 @@
         android:padding="16dp"
         android:text="This is a camera in fragment B" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

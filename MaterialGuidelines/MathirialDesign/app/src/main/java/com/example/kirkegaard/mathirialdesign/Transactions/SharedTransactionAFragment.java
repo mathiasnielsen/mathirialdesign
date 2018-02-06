@@ -1,7 +1,5 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.Transactions;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,31 +10,33 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.kirkegaard.mathirialdesign.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link SharedTransactionA.OnFragmentInteractionListener} interface
+ * {@link SharedTransactionAFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link SharedTransactionA#newInstance} factory method to
+ * Use the {@link SharedTransactionAFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SharedTransactionA extends Fragment {
+public class SharedTransactionAFragment extends Fragment {
 
-    public static final String TAG = SharedTransactionA.class.getSimpleName();
+    public static final String TAG = SharedTransactionAFragment.class.getSimpleName();
 
-    public SharedTransactionA() {
+    public SharedTransactionAFragment() {
         // Required empty public constructor
     }
 
-    public static SharedTransactionA newInstance() {
-        return new SharedTransactionA();
+    public static SharedTransactionAFragment newInstance() {
+        return new SharedTransactionAFragment();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_shared_transaction, container, false);
+        return inflater.inflate(R.layout.fragment_shared_transaction_a, container, false);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.MasterDetail.dummy;
 
 import android.app.Activity;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.kirkegaard.mathirialdesign.dummy.DummyContent;
+import com.example.kirkegaard.mathirialdesign.R;
 
 /**
  * A fragment representing a single Item detail screen.
