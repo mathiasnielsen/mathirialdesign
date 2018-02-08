@@ -38,7 +38,7 @@
                 android:title="Master details" />
             <item
                 android:id="@+id/nav_fullscreen"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_dlna_server"
                 android:title="Fullscreen" />
             <item
                 android:id="@+id/nav_shared_transaction"
