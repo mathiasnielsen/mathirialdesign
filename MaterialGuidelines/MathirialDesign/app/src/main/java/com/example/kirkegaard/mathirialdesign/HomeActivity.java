@@ -109,9 +109,6 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_manage:
                 break;
 
-            case R.id.nav_share:
-                break;
-
             case R.id.nav_scrolling:
                 NavigateToPage(ScrollingActivity.class);
                 break;
@@ -153,6 +150,7 @@ public class HomeActivity extends AppCompatActivity
     private void NavigateToPage(Class<?> activityClass)
     {
         Intent intent = new Intent(this, activityClass);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         this.startActivity(intent);
     }
 

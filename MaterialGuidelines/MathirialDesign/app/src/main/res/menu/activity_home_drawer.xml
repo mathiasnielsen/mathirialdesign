@@ -26,27 +26,27 @@
         <menu>
             <item
                 android:id="@+id/nav_scrolling"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_swap_vert"
                 android:title="Scrolling" />
             <item
                 android:id="@+id/nav_bottom_nav"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_call_to_action"
                 android:title="Bottom navigation" />
             <item
                 android:id="@+id/nav_master_details"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_chrome_reader"
                 android:title="Master details" />
             <item
                 android:id="@+id/nav_fullscreen"
-                android:icon="@drawable/ic_dlna_server"
+                android:icon="@drawable/ic_fullscreen"
                 android:title="Fullscreen" />
             <item
                 android:id="@+id/nav_shared_transaction"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_directions_walk"
                 android:title="Shared transition" />
             <item
                 android:id="@+id/nav_fragments_shared_transaction"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_transfer_within_a_station"
                 android:title="Fragment shared transition" />
         </menu>
     </item>
@@ -55,25 +55,12 @@
         <menu>
             <item
                 android:id="@+id/nav_tabbed_pager"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_swap_horiz"
                 android:title="Tabbed pager" />
             <item
                 android:id="@+id/nav_dropdown_pager"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_arrow_drop_down"
                 android:title="Dropdown pager" />
-        </menu>
-    </item>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
         </menu>
     </item>
 
