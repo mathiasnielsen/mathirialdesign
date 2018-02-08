@@ -1,0 +1,41 @@
+import org.ajoberstar.grgit.Grgit
+
+buildscript {
+  ext.kotlinVersion = '1.2.0'
+  ext.supportLibVersion = '27.0.2'
+
+  repositories {
+    jcenter()
+    google()
+  }
+  dependencies {
+    classpath 'org.ajoberstar:grgit:1.9.3'
+    classpath 'com.android.tools.build:gradle:3.0.1'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlinVersion"
+    classpath 'org.ajoberstar:grgit:1.9.3'
+  }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    google()
+    maven {
+      url "https://jitpack.io"
+    }
+    flatDir {
+      dirs 'libs'
+    }
+  }
+}
+
+ext {
+  git = Grgit.open()
+  gitSha = git.head().id
+  gitBranch = git.branch.getCurrent().name
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

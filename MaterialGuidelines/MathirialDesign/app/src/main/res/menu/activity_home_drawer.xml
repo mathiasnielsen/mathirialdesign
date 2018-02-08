@@ -51,6 +51,15 @@
         </menu>
     </item>
 
+    <item android:title="Coolness">
+        <menu>
+            <item
+                android:id="@+id/nav_lottie_animations"
+                android:icon="@drawable/ic_movie_filter"
+                android:title="Lottie animations" />
+        </menu>
+    </item>
+
     <item android:title="Pager">
         <menu>
             <item

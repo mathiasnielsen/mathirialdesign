@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.example.kirkegaard.mathirialdesign.LottieAnimations.LottieAnimationsActivity;
 import com.example.kirkegaard.mathirialdesign.MasterDetail.dummy.ItemListActivity;
 import com.example.kirkegaard.mathirialdesign.Pagers.PagerDropdownActivity;
 import com.example.kirkegaard.mathirialdesign.Pagers.PagerTabStripActivity;
@@ -139,6 +140,10 @@ public class HomeActivity extends AppCompatActivity
 
             case R.id.nav_fragments_shared_transaction:
                 NavigateToPage(SharedTransactionFragmentHolderActivity.class);
+                break;
+
+            case R.id.nav_lottie_animations:
+                NavigateToPage(LottieAnimationsActivity.class);
                 break;
         }
 

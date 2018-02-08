@@ -63,8 +63,9 @@
             android:theme="@style/AppTheme.SharedTransition" />
         <activity
             android:name=".Transactions.SharedTransactionFragmentHolderActivity"
-            android:theme="@style/AppTheme.SharedTransition"
-            />
+            android:theme="@style/AppTheme.SharedTransition" />
+        <activity
+            android:name=".LottieAnimations.LottieAnimationsActivity"/>
     </application>
 
 </manifest>
