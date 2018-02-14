@@ -2,10 +2,14 @@ package com.example.kirkegaard.mathirialdesign.MasterDetail.dummy;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,6 +22,7 @@ import android.widget.TextView;
 import com.example.kirkegaard.mathirialdesign.R;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * An activity representing a list of Items. This activity
@@ -68,6 +73,7 @@ public class ItemListActivity extends AppCompatActivity {
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, DummyContent.ITEMS, mTwoPane));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL));
     }
 
     public static class SimpleItemRecyclerViewAdapter
@@ -135,6 +141,12 @@ public class ItemListActivity extends AppCompatActivity {
                 super(view);
                 mIdView = (TextView) view.findViewById(R.id.id_text);
                 mContentView = (TextView) view.findViewById(R.id.content);
+                Random random = new Random();
+                int red = random.nextInt(255);
+                int green = random.nextInt(255);
+                int blue = random.nextInt(255);
+                int backgroundColor = Color.rgb(red, green, blue);
+                view.setBackgroundColor(backgroundColor);
             }
         }
     }

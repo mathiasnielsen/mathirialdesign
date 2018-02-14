@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,6 +24,8 @@ import com.example.kirkegaard.mathirialdesign.Pagers.PagerDropdownActivity;
 import com.example.kirkegaard.mathirialdesign.Pagers.PagerTabStripActivity;
 import com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionFragmentHolderActivity;
 import com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionAActivity;
+
+import java.io.IOException;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -144,6 +147,10 @@ public class HomeActivity extends AppCompatActivity
 
             case R.id.nav_lottie_animations:
                 NavigateToPage(LottieAnimationsActivity.class);
+                break;
+
+            case R.id.nav_log_cat:
+                NavigateToPage(LogCatActivity.class);
                 break;
         }
 
