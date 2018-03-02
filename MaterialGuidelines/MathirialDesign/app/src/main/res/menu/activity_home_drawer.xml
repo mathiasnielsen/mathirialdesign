@@ -29,6 +29,10 @@
                 android:icon="@drawable/ic_swap_vert"
                 android:title="Scrolling" />
             <item
+                android:id="@+id/nav_dialogs"
+                android:icon="@drawable/ic_swap_vert"
+                android:title="Dialogs" />
+            <item
                 android:id="@+id/nav_bottom_nav"
                 android:icon="@drawable/ic_call_to_action"
                 android:title="Bottom navigation" />
@@ -48,6 +52,10 @@
                 android:id="@+id/nav_fragments_shared_transaction"
                 android:icon="@drawable/ic_transfer_within_a_station"
                 android:title="Fragment shared transition" />
+            <item
+                android:id="@+id/nav_adapters"
+                android:icon="@drawable/ic_swap_vert"
+                android:title="Adapters" />
         </menu>
     </item>
 

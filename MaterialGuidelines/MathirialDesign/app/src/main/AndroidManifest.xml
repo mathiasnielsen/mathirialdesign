@@ -65,7 +65,9 @@
             android:name=".Transactions.SharedTransactionFragmentHolderActivity"
             android:theme="@style/AppTheme.SharedTransition" />
         <activity android:name=".LottieAnimations.LottieAnimationsActivity" />
-        <activity android:name=".LogCatActivity"></activity>
+        <activity android:name=".LogCatActivity" />
+        <activity android:name=".Dialogs.DialogsActivity" />
+        <activity android:name=".Lists.GroupedListActivity"></activity>
     </application>
 
 </manifest>

@@ -18,6 +18,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.example.kirkegaard.mathirialdesign.Dialogs.DialogsActivity;
+import com.example.kirkegaard.mathirialdesign.Lists.GroupedListActivity;
 import com.example.kirkegaard.mathirialdesign.LottieAnimations.LottieAnimationsActivity;
 import com.example.kirkegaard.mathirialdesign.MasterDetail.dummy.ItemListActivity;
 import com.example.kirkegaard.mathirialdesign.Pagers.PagerDropdownActivity;
@@ -117,6 +119,10 @@ public class HomeActivity extends AppCompatActivity
                 NavigateToPage(ScrollingActivity.class);
                 break;
 
+            case R.id.nav_dialogs:
+                NavigateToPage(DialogsActivity.class);
+                break;
+
             case R.id.nav_bottom_nav:
                 NavigateToPage(BottomNavigationActivity.class);
                 break;
@@ -151,6 +157,10 @@ public class HomeActivity extends AppCompatActivity
 
             case R.id.nav_log_cat:
                 NavigateToPage(LogCatActivity.class);
+                break;
+
+            case R.id.nav_adapters:
+                NavigateToPage(GroupedListActivity.class);
                 break;
         }
 
