@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionBActivity">
+    tools:context=".Features.Features.Transactions.SharedTransactionBActivity">
 
     <ImageView
         android:id="@+id/simple_activity_b_image"

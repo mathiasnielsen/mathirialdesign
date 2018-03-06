@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.MasterDetail.dummy;
+package com.example.kirkegaard.mathirialdesign.Features.Features.MasterDetails;
 
 import android.content.Intent;
 import android.os.Bundle;

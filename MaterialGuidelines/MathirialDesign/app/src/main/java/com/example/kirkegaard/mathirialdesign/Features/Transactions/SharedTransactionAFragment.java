@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Transactions;
+package com.example.kirkegaard.mathirialdesign.Features.Features.Transactions;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

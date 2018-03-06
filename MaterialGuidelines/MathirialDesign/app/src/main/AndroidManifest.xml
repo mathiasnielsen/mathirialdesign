@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name=".Features.Features.HomeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,54 +20,55 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ScrollingActivity"
+            android:name=".Features.Features.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".BottomNavigationActivity"
+            android:name=".Features.Features.BottomNavigationActivity"
             android:label="@string/title_activity_main" />
         <activity
-            android:name=".MasterDetail.dummy.ItemListActivity"
+            android:name=".Features.Features.MasterDetails.ItemListActivity"
             android:label="@string/title_item_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MasterDetail.dummy.ItemDetailActivity"
+            android:name=".Features.Features.MasterDetails.ItemDetailActivity"
             android:label="@string/title_item_detail"
-            android:parentActivityName=".MasterDetail.dummy.ItemListActivity"
+            android:parentActivityName=".Features.Features.MasterDetails.ItemListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.kirkegaard.mathirialdesign.MasterDetail.dummy.ItemListActivity" />
+                android:value=".Features.Features.MasterDetails.ItemListActivity" />
         </activity>
         <activity
-            android:name=".Pagers.PagerTabStripActivity"
+            android:name=".Features.Features.Pagers.PagerTabStripActivity"
             android:label="@string/title_activity_pager"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Pagers.PagerDropdownActivity"
+            android:name=".Features.Features.Pagers.PagerDropdownActivity"
             android:label="@string/title_activity_dropdown_pager"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FullscreenActivity"
+            android:name=".Features.Features.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_fullscreen"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".RevealActivity"
+            android:name=".Features.Features.RevealActivity"
             android:theme="@style/AppTheme.Transparent" />
         <activity
-            android:name=".Transactions.SharedTransactionAActivity"
+            android:name=".Features.Features.Transactions.SharedTransactionAActivity"
             android:theme="@style/AppTheme.SharedTransition" />
         <activity
-            android:name=".Transactions.SharedTransactionBActivity"
+            android:name=".Features.Features.Transactions.SharedTransactionBActivity"
             android:theme="@style/AppTheme.SharedTransition" />
         <activity
-            android:name=".Transactions.SharedTransactionFragmentHolderActivity"
+            android:name=".Features.Features.Transactions.SharedTransactionFragmentHolderActivity"
             android:theme="@style/AppTheme.SharedTransition" />
-        <activity android:name=".LottieAnimations.LottieAnimationsActivity" />
-        <activity android:name=".LogCatActivity" />
-        <activity android:name=".Dialogs.DialogsActivity" />
-        <activity android:name=".Lists.GroupedListActivity"></activity>
+        <activity android:name=".Features.Features.LottieAnimations.LottieAnimationsActivity" />
+        <activity android:name=".Features.Features.LogCatActivity" />
+        <activity android:name=".Features.Features.Dialogs.DialogsActivity" />
+        <activity android:name=".Features.Features.Lists.GroupedListActivity" />
+        <activity android:name=".Features.Features.Navigation.ActivityBackStackManipulationActivity"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,6 @@
     android:layout_height="match_parent"
     android:background="#FF33FF"
     android:fitsSystemWindows="true"
-    tools:context="com.example.kirkegaard.mathirialdesign.RevealActivity">
+    tools:context="com.example.kirkegaard.mathirialdesign.Features.Features.RevealActivity">
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign;
+package com.example.kirkegaard.mathirialdesign.Features.Features;
 
 import android.os.Bundle;
 import android.content.Intent;
@@ -6,7 +6,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,16 +17,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.example.kirkegaard.mathirialdesign.Dialogs.DialogsActivity;
-import com.example.kirkegaard.mathirialdesign.Lists.GroupedListActivity;
-import com.example.kirkegaard.mathirialdesign.LottieAnimations.LottieAnimationsActivity;
-import com.example.kirkegaard.mathirialdesign.MasterDetail.dummy.ItemListActivity;
-import com.example.kirkegaard.mathirialdesign.Pagers.PagerDropdownActivity;
-import com.example.kirkegaard.mathirialdesign.Pagers.PagerTabStripActivity;
-import com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionFragmentHolderActivity;
-import com.example.kirkegaard.mathirialdesign.Transactions.SharedTransactionAActivity;
-
-import java.io.IOException;
+import com.example.kirkegaard.mathirialdesign.Features.Features.Dialogs.DialogsActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Features.Lists.GroupedListActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Features.LottieAnimations.LottieAnimationsActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Features.MasterDetails.ItemListActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Features.Pagers.PagerDropdownActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Features.Pagers.PagerTabStripActivity;
+import com.example.kirkegaard.mathirialdesign.R;
+import com.example.kirkegaard.mathirialdesign.Features.Features.Transactions.SharedTransactionFragmentHolderActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Features.Transactions.SharedTransactionAActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

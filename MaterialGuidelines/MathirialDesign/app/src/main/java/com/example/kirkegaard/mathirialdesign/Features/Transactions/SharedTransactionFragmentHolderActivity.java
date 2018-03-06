@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Transactions;
+package com.example.kirkegaard.mathirialdesign.Features.Features.Transactions;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Pagers;
+package com.example.kirkegaard.mathirialdesign.Features.Features.Pagers;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;

@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Dialogs;
+package com.example.kirkegaard.mathirialdesign.Features.Features.Dialogs;
 
 import android.content.Context;
 import android.os.Bundle;

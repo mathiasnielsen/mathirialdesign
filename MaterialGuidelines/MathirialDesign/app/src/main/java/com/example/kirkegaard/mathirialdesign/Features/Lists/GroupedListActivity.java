@@ -1,6 +1,5 @@
-package com.example.kirkegaard.mathirialdesign.Lists;
+package com.example.kirkegaard.mathirialdesign.Features.Features.Lists;
 
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
