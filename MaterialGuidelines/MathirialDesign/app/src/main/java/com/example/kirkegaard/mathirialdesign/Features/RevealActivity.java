@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features;
+package com.example.kirkegaard.mathirialdesign.Features;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

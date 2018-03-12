@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features.MasterDetails;
+package com.example.kirkegaard.mathirialdesign.Features.MasterDetails;
 
 import android.app.Activity;
 import android.support.design.widget.CollapsingToolbarLayout;

@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features.Dialogs;
+package com.example.kirkegaard.mathirialdesign.Features.Dialogs;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;

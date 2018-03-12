@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features;
+package com.example.kirkegaard.mathirialdesign.Features;
 
 import android.os.Bundle;
 import android.content.Intent;
@@ -17,15 +17,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.example.kirkegaard.mathirialdesign.Features.Features.Dialogs.DialogsActivity;
-import com.example.kirkegaard.mathirialdesign.Features.Features.Lists.GroupedListActivity;
-import com.example.kirkegaard.mathirialdesign.Features.Features.LottieAnimations.LottieAnimationsActivity;
-import com.example.kirkegaard.mathirialdesign.Features.Features.MasterDetails.ItemListActivity;
-import com.example.kirkegaard.mathirialdesign.Features.Features.Pagers.PagerDropdownActivity;
-import com.example.kirkegaard.mathirialdesign.Features.Features.Pagers.PagerTabStripActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Dialogs.DialogsActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Lists.GroupedListActivity;
+import com.example.kirkegaard.mathirialdesign.Features.LottieAnimations.LottieAnimationsActivity;
+import com.example.kirkegaard.mathirialdesign.Features.MasterDetails.ItemListActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Pagers.PagerDropdownActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Pagers.PagerTabStripActivity;
 import com.example.kirkegaard.mathirialdesign.R;
-import com.example.kirkegaard.mathirialdesign.Features.Features.Transactions.SharedTransactionFragmentHolderActivity;
-import com.example.kirkegaard.mathirialdesign.Features.Features.Transactions.SharedTransactionAActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Transactions.SharedTransactionFragmentHolderActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Transactions.SharedTransactionAActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features.Lists;
+package com.example.kirkegaard.mathirialdesign.Features.Lists;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

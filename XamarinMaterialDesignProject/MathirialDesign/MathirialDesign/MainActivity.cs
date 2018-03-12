@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 namespace MathirialDesign
 {
@@ -21,6 +22,13 @@ namespace MathirialDesign
             Button button = FindViewById<Button>(Resource.Id.myButton);
 
             button.Click += delegate { button.Text = $"{count++} clicks!"; };
+        }
+
+        private void NavigateToPage<TView>()
+            where TView : Activity
+        {
+            var intent = new Intent(this, typeof(TView));
+            StartActivity(intent);
         }
     }
 }

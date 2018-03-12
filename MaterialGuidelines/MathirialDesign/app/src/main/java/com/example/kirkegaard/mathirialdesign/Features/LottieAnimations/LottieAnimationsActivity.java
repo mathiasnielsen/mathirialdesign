@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features.LottieAnimations;
+package com.example.kirkegaard.mathirialdesign.Features.LottieAnimations;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

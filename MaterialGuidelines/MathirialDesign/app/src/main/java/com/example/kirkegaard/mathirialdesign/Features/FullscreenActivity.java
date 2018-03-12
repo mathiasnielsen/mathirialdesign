@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features;
+package com.example.kirkegaard.mathirialdesign.Features;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;

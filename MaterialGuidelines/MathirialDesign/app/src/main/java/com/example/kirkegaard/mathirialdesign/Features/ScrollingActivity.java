@@ -1,4 +1,4 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features;
+package com.example.kirkegaard.mathirialdesign.Features;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

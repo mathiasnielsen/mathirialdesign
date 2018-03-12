@@ -1,8 +1,10 @@
-package com.example.kirkegaard.mathirialdesign.Features.Features.Navigation;
+package com.example.kirkegaard.mathirialdesign.Features.Navigation;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 import com.example.kirkegaard.mathirialdesign.R;
@@ -13,6 +15,8 @@ public class ActivityBackStackManipulationActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_back_stack_manipulation);
+
+        View decorView = getWindow().getDecorView();
 
         TextView textView = GetTextView(this);
     }
