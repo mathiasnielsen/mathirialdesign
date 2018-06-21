@@ -10,13 +10,15 @@ import java.util.Random;
 
 public class ColorFactory
 {
-    /*
-    public static Color GetRandomColor()
+    public static int GetRandomColor()
     {
+        int bound = 255;
         Random random = new Random();
-        float red = random.nextFloat();
-        float green = random.nextFloat();
-        float blue = random.nextFloat();
+        int red = random.nextInt(bound);
+        int green = random.nextInt(bound);
+        int blue = random.nextInt(bound);
+
+        int randomColor = Color.argb(255, red, green, blue);
+        return randomColor;
     }
-    */
 }
