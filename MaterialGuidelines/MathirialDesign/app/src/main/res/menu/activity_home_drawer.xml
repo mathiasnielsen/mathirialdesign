@@ -56,6 +56,10 @@
                 android:id="@+id/nav_adapters"
                 android:icon="@drawable/ic_swap_vert"
                 android:title="Adapters" />
+            <item
+                android:id="@+id/nav_controls"
+                android:icon="@drawable/ic_format_paint_black_24dp"
+                android:title="Controls" />
         </menu>
     </item>
 

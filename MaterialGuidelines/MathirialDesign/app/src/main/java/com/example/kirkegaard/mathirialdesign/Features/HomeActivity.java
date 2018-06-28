@@ -17,6 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.example.kirkegaard.mathirialdesign.Features.Controls.ControlsOverviewActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Controls.TextInputLayoutActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Dialogs.DialogsActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Lists.GroupedListActivity;
 import com.example.kirkegaard.mathirialdesign.Features.LottieAnimations.LottieAnimationsActivity;
@@ -41,8 +43,8 @@ public class HomeActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                NavigateToPage(TextInputLayoutActivity.class);
             }
         });
 
@@ -159,6 +161,10 @@ public class HomeActivity extends AppCompatActivity
 
             case R.id.nav_adapters:
                 NavigateToPage(GroupedListActivity.class);
+                break;
+
+            case R.id.nav_controls:
+                NavigateToPage(ControlsOverviewActivity.class);
                 break;
         }
 

@@ -68,7 +68,10 @@
         <activity android:name=".Features.LogCatActivity" />
         <activity android:name=".Features.Dialogs.DialogsActivity" />
         <activity android:name=".Features.Lists.GroupedListActivity" />
-        <activity android:name=".Features.Navigation.ActivityBackStackManipulationActivity"></activity>
+        <activity android:name=".Features.Navigation.ActivityBackStackManipulationActivity" />
+        <activity android:name=".Features.Controls.TextInputLayoutActivity" />
+        <activity android:name=".Features.Controls.ControlsOverviewActivity" />
+        <activity android:name=".Features.PlaygroundActivity"></activity>
     </application>
 
 </manifest>
