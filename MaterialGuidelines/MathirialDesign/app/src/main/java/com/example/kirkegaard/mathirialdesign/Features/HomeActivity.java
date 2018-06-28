@@ -20,6 +20,8 @@ import android.widget.Button;
 import com.example.kirkegaard.mathirialdesign.Features.Controls.ControlsOverviewActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Controls.TextInputLayoutActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Dialogs.DialogsActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Filters.MaskFilterActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Filters.PeekThoughImageView;
 import com.example.kirkegaard.mathirialdesign.Features.Lists.GroupedListActivity;
 import com.example.kirkegaard.mathirialdesign.Features.LottieAnimations.LottieAnimationsActivity;
 import com.example.kirkegaard.mathirialdesign.Features.MasterDetails.ItemListActivity;
@@ -44,7 +46,7 @@ public class HomeActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-                NavigateToPage(TextInputLayoutActivity.class);
+                NavigateToPage(MaskFilterActivity.class);
             }
         });
 
