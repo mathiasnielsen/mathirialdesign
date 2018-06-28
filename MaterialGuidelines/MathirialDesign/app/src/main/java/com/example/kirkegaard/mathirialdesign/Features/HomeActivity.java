@@ -27,6 +27,7 @@ import com.example.kirkegaard.mathirialdesign.Features.LottieAnimations.LottieAn
 import com.example.kirkegaard.mathirialdesign.Features.MasterDetails.ItemListActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Pagers.PagerDropdownActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Pagers.PagerTabStripActivity;
+import com.example.kirkegaard.mathirialdesign.Features.Sensor.SensorActivity;
 import com.example.kirkegaard.mathirialdesign.R;
 import com.example.kirkegaard.mathirialdesign.Features.Transactions.SharedTransactionFragmentHolderActivity;
 import com.example.kirkegaard.mathirialdesign.Features.Transactions.SharedTransactionAActivity;
@@ -46,7 +47,7 @@ public class HomeActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-                NavigateToPage(MaskFilterActivity.class);
+                NavigateToPage(SensorActivity.class);
             }
         });
 

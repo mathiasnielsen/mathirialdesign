@@ -72,7 +72,8 @@
         <activity android:name=".Features.Controls.TextInputLayoutActivity" />
         <activity android:name=".Features.Controls.ControlsOverviewActivity" />
         <activity android:name=".Features.PlaygroundActivity" />
-        <activity android:name=".Features.Filters.MaskFilterActivity"></activity>
+        <activity android:name=".Features.Filters.MaskFilterActivity" />
+        <activity android:name=".Features.Sensor.SensorActivity"></activity>
     </application>
 
 </manifest>

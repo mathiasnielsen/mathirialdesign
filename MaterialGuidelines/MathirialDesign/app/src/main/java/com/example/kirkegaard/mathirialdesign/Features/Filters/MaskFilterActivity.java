@@ -7,6 +7,8 @@ import com.example.kirkegaard.mathirialdesign.R;
 
 public class MaskFilterActivity extends AppCompatActivity {
 
+    // INSPIRATION: http://chiuki.github.io/android-shaders-filters/#/9
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
