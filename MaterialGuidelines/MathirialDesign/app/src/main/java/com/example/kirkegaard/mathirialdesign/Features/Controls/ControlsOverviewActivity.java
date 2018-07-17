@@ -1,8 +1,9 @@
 package com.example.kirkegaard.mathirialdesign.Features.Controls;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,6 +14,11 @@ public class ControlsOverviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        overridePendingTransition(
+                R.anim.in_animation,
+                R.anim.no_animation);
+
         setContentView(R.layout.activity_controls_overview);
 
         Button textInputLayoutButton = (Button)findViewById(R.id.ControlsOverviewTextInputLayout);
@@ -24,9 +30,22 @@ public class ControlsOverviewActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        if (isFinishing())
+        {
+            overridePendingTransition(
+                    R.anim.no_animation,
+                    R.anim.out_animation);
+        }
+    }
+
     private void NavigateToPage(Class<?> activityClass)
     {
         Intent intent = new Intent(this, activityClass);
+        //this.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
         this.startActivity(intent);
     }
 }

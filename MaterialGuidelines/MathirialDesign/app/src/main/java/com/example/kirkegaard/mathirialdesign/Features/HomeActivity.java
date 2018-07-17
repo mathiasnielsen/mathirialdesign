@@ -1,5 +1,6 @@
 package com.example.kirkegaard.mathirialdesign.Features;
 
+import android.app.ActivityOptions;
 import android.os.Bundle;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
@@ -180,6 +181,9 @@ public class HomeActivity extends AppCompatActivity
     {
         Intent intent = new Intent(this, activityClass);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        // This is only if we want to use the theme transistion
+        //this.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
         this.startActivity(intent);
     }
 
