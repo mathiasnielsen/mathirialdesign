@@ -84,6 +84,12 @@
     <Reference Include="Calligraphy">
       <HintPath>..\packages\CallygraphyXamarin.2.3.0\lib\MonoAndroid\Calligraphy.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.Constraint.Layout.Solver">
+      <HintPath>..\packages\Xamarin.Android.Support.Constraint.Layout.Solver.1.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Constraint.Layout.Solver.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Constraint.Layout">
+      <HintPath>..\packages\Xamarin.Android.Support.Constraint.Layout.1.1.0\lib\MonoAndroid70\Xamarin.Android.Support.Constraint.Layout.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -91,6 +97,8 @@
     <Compile Include="Features\MainActivity.cs" />
     <Compile Include="Features\InlineTextModificationView.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="Builders\SpannableStringBuilder.cs" />
+    <Compile Include="Utilities\CustomTypefaceSpan.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -113,6 +121,8 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Features\" />
+    <Folder Include="Builders\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\Gotham-Black.otf" />
