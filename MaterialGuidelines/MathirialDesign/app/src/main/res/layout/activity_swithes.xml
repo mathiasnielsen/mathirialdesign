@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Features.Controls.SwithesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:dividerPadding="10dp">
+
+        <TextView
+            android:text="Default switches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Enabled and on"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Enabled and off"
+            android:checked="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Disabled and on"
+            android:checked="true"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Disabled and off"
+            android:enabled="false"
+            android:checked="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Colored switches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Enabled and on"
+            android:checked="true"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Enabled and off"
+            android:checked="false"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Disabled and on"
+            android:checked="true"
+            android:enabled="false"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:text="Disabled and off"
+            android:enabled="false"
+            android:checked="false"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Colored compat switches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Enabled and on"
+            android:checked="true"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Enabled and off"
+            android:checked="false"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Disabled and on"
+            android:checked="true"
+            android:enabled="false"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Disabled and off"
+            android:enabled="false"
+            android:checked="false"
+            android:theme="@style/ColoredSwitchTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Colored compat switches with selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Enabled and on"
+            android:checked="true"
+            android:theme="@style/ColoredSwitchWithSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Enabled and off"
+            android:checked="false"
+            android:theme="@style/ColoredSwitchWithSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Disabled and on"
+            android:checked="true"
+            android:enabled="false"
+            android:theme="@style/ColoredSwitchWithSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.SwitchCompat
+            android:text="Disabled and off"
+            android:enabled="false"
+            android:checked="false"
+            android:theme="@style/ColoredSwitchWithSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

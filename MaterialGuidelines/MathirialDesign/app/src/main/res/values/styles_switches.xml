@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ColoredSwitchTheme" parent="AppTheme">
+
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+
+        <!-- Highlight color when pressed thumb -->
+        <item name="colorControlHighlight">@color/green</item>
+
+        <item name="colorSwitchThumbNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/pink</item>
+        <item name="colorControlNormal">@color/sand</item>
+
+        <!-- Trackcolor -->
+        <item name="android:colorForeground">@color/yellow</item>
+
+        <item name="android:colorBackground">@color/blue</item>
+        <!--<item name="colorForeground">@color/yellow</item>-->
+        <!--<item name="colorBackground">@color/dark_red</item>-->
+
+    </style>
+
+    <style name="ColoredSwitchWithSelector" parent="AppTheme">
+
+        <!-- For more customization: https://medium.com/@elye.project/customizing-switch-using-xml-ca0d37204a86 -->
+        <!-- thumb color when activated + lighter version background -->
+        <!--<item name="colorControlActivated">@color/green</item>-->
+
+        <!-- background color lighter -->
+        <!--<item name="android:colorForeground">@color/orange</item>-->
+
+        <item name="android:thumbTint">@color/switch_color_selector_test</item>
+
+        <!-- Needs api level 23 -->
+        <!--<item name="android:trackTint">@color/color_swithc</item>-->
+    </style>
+
+</resources>

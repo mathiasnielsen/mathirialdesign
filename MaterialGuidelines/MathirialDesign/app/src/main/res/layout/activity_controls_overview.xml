@@ -12,4 +12,11 @@
         android:layout_height="wrap_content"
         android:text="Text input layout"/>
 
+    <Button
+        android:id="@+id/ControlsOverviewSwitches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switches"
+        app:layout_constraintTop_toBottomOf="@id/ControlsOverviewTextInputLayout"/>
+
 </android.support.constraint.ConstraintLayout>

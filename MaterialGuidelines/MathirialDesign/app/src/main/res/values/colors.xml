@@ -9,5 +9,11 @@
     <color name="green">#00cc00</color>
     <color name="red">#ff0000</color>
     <color name="orange">#ff9900</color>
+    <color name="blue">#750a64</color>
+    <color name="purple">#750a64</color>
+    <color name="pink">#ee8adb</color>
+    <color name="sand">#cfc79d</color>
+    <color name="yellow">#f0c800</color>
+    <color name="dark_red">#390000</color>
 
 </resources>

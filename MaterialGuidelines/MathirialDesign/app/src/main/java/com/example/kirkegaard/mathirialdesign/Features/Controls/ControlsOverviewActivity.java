@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.kirkegaard.mathirialdesign.R;
+import com.example.kirkegaard.mathirialdesign.*;
 
 public class ControlsOverviewActivity extends AppCompatActivity {
 
@@ -15,9 +15,9 @@ public class ControlsOverviewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        overridePendingTransition(
-                R.anim.in_animation,
-                R.anim.no_animation);
+        //overridePendingTransition(
+                ////R.anim.in_animation,
+                ////R.anim.no_animation);
 
         setContentView(R.layout.activity_controls_overview);
 
@@ -26,6 +26,16 @@ public class ControlsOverviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 NavigateToPage(TextInputLayoutActivity.class);
+            }
+        });
+
+        Button switchesButton = (Button)findViewById(R.id.ControlsOverviewSwitches);
+        switchesButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                NavigateToPage(SwithesActivity.class);
             }
         });
     }
