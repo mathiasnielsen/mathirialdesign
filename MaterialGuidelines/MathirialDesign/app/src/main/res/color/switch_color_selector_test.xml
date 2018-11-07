@@ -2,9 +2,8 @@
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:drawable="@drawable/ic_chrome_reader"
-        android:state_checked="true" />
+        android:state_enabled="false"
+        android:color="@color/green"/>
     <item
-        android:drawable="@drawable/ic_menu_camera"
-        android:state_checked="false"/>
+        android:color="@color/red"/>
 </selector>

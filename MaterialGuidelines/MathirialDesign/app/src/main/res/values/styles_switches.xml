@@ -1,8 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--<style name="ColoredSwitchTheme" parent="AppTheme">-->
-    <style name="ColoredSwitchTheme" parent="android:Theme.Material">
+    <style name="ColoredSwitchTheme" parent="AppTheme">
+
+        <!-- Highlight color when pressed thumb -->
+        <item name="colorControlHighlight">@color/green</item>
+
+        <!-- OFF color of the thumb -->
+        <!-- Also 30% transparency of the disabled thumb (both ON and OFF) -->
+        <!-- <item name="colorSwitchThumbNormal">@color/thumb_switch_check_color</item> -->
+
+        <!-- Default ON color of the thumb -->
+        <!-- TRACK COLOR is 30% color when ON -->
+        <item name="colorControlActivated">@color/green</item>
+
+        <!-- Another way is THUMB Tint (Only the tint), which supports selectors perfectly -->
+        <item name="thumbTint">@color/thumb_switch_check_color</item>
+
+        <!-- TRACK color when OFF -->
+        <!-- Also 30% transparency of the disabled track color -->
+        <item name="android:colorForeground">@color/purple</item>
+
+    </style>
+
+
+    <!--<style name="ColoredSwitchTheme_Material" parent="android:Theme.Material">-->
+    <style name="ColoredSwitchTheme__Material" parent="android:Theme.Material">
+
+        <!-- Highlight color when pressed thumb -->
+        <item name="android:colorControlHighlight">@color/green</item>
+        <!-- APPCOMPAT -->
+        <item name="colorControlHighlight">@color/green</item>
+
+        <!-- OFF color of the thumb -->
+        <!-- Also 30% transparency of the disabled thumb (both ON and OFF) -->
+        <!-- NOT CURRENTLY POSSIBLE ON SWITCH -->
+        <!-- APPCOMPAT (Will be semi-transparent when disabled) -->
+        <!--<item name="colorSwitchThumbNormal">@color/switch_color_selector_test</item>-->
+
+        <!-- ON color of the thumb -->
+        <!-- Also TRACK 30% color when ON -->
+        <item name="android:colorControlActivated">@color/purple</item>
+        <!-- APPCOMPAT -->
+        <item name="colorControlActivated">@color/purple</item>
+
+        <!-- ON color but only thumb -->
+        <item name="android:thumbTint">@color/pink</item>
+        <!-- APPCOMPAT (Selector not working) -->
+        <item name="thumbTint">@color/thumb_switch_check_color</item>
+
+        <!-- A selector will change the OFF thumb very brief, but go to default color afterwards -->
+        <!--<item name="android:colorControlActivated">@color/switch_color_selector_test</item>-->
+
+        <!-- TRACK color when OFF -->
+        <!-- Also 30% transparency of the disabled track color -->
+        <item name="android:colorForeground">@color/yellow</item>
+        <!-- APPCOMPAT-->
+        <!-- The same ^^-->
+
+        <!-- Not changing anything
+        <item name="android:color">@color/pink</item>
+        <item name="android:thumbTint">@color/pink</item>
+        <item name="thumbTint">@color/pink</item>
+        -->
+    </style>
+
+    <!--<style name="ColoredSwitchTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="ColoredSwitchTheme_AppCompatTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
         <!-- Highlight color when pressed thumb -->
         <item name="colorControlHighlight">@color/green</item>
