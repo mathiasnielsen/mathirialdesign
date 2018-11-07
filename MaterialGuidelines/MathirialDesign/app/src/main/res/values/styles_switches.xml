@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ColoredSwitchTheme" parent="AppTheme">
-
-        <item name="colorPrimary">@color/blue</item>
-        <item name="colorAccent">@color/blue</item>
-        <item name="colorPrimaryDark">@color/orange</item>
+    <!--<style name="ColoredSwitchTheme" parent="AppTheme">-->
+    <style name="ColoredSwitchTheme" parent="android:Theme.Material">
 
         <!-- Highlight color when pressed thumb -->
         <item name="colorControlHighlight">@color/green</item>
 
-        <item name="colorSwitchThumbNormal">@color/blue</item>
-        <item name="colorControlActivated">@color/pink</item>
-        <item name="colorControlNormal">@color/sand</item>
+        <!-- OFF color of the thumb -->
+        <!-- Also 30% transparency of the disabled thumb (both ON and OFF) -->
+        <item name="colorSwitchThumbNormal">@color/purple</item>
 
-        <!-- Trackcolor -->
+        <!-- ON color of the thumb -->
+        <item name="colorControlActivated">@color/pink</item>
+
+        <!-- TRACK color when off -->
+        <!-- Also 30% transparency of the disabled track color -->
         <item name="android:colorForeground">@color/yellow</item>
 
-        <item name="android:colorBackground">@color/blue</item>
+        <!-- This is only for cool api level 23 -->
+        <!--<item name="android:trackTint">@color/red</item>-->
+
+        <!-- This is non-existing -->
+        <!--<item name="colorForeground">@color/blue</item>-->
+
+        <!-- Not making a difference -->
+        <!--<item name="colorPrimary">@color/blue</item>-->
+        <!--<item name="colorAccent">@color/blue</item>-->
+        <!--<item name="colorPrimaryDark">@color/orange</item>-->
+        <!--<item name="colorControlNormal">@color/blue</item>-->
         <!--<item name="colorForeground">@color/yellow</item>-->
         <!--<item name="colorBackground">@color/dark_red</item>-->
+        <!--<item name="android:colorBackground">@color/blue</item>-->
 
     </style>
 
