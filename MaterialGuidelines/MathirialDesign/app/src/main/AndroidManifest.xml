@@ -70,7 +70,8 @@
         <activity android:name=".Features.Lists.GroupedListActivity" />
         <activity android:name=".Features.Navigation.ActivityBackStackManipulationActivity" />
         <activity android:name=".Features.Controls.TextInputLayoutActivity" />
-        <activity android:name=".Features.Controls.ControlsOverviewActivity" />
+        <activity android:name=".Features.Controls.ControlsOverviewActivity"
+            android:noHistory="true"/>
         <activity android:name=".Features.PlaygroundActivity" />
         <activity android:name=".Features.Filters.MaskFilterActivity" />
         <activity android:name=".Features.Sensor.SensorActivity" />

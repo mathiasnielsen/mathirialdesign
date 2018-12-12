@@ -2,31 +2,30 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <Switch
-        android:id="@+id/InformationSwitchSwitch"
-        android:layout_height="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/green">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="-0.5"/>
+
+    <View
+        android:id="@+id/dummy_view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/InformationSwitchContentTextView"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:lines="2"
         android:gravity="center_vertical"
-        android:singleLine="true"
-        app:layout_constraintTop_toTopOf="@id/InformationSwitchSwitch"
-        app:layout_constraintBottom_toBottomOf="@id/InformationSwitchSwitch"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/InformationSwitchSwitch"
-        tools:text="asxkaælk læak læadkaælk dlæa dklaj kladj kladj kladj kadlj lkadj lkadj ald"/>
-    <TextView
-        android:id="@+id/InformationSwitchInfoTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@id/InformationSwitchContentTextView"
-        app:layout_constraintRight_toRightOf="@id/InformationSwitchSwitch"
-        app:layout_constraintTop_toBottomOf="@id/InformationSwitchContentTextView"
-        tools:text="asklcj dklj akljd dlksj akl jadj klaj æadj æaldj æladj æadj kladjkl jakld jalædj æadj æadl "/>
+        app:layout_constraintTop_toTopOf="@id/dummy_view"
+        android:text="Mathias er sød og rar og venlig og dum og grime og lort"/>
 </android.support.constraint.ConstraintLayout>
