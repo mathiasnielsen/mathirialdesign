@@ -21,8 +21,14 @@ public class CustomTransReenter extends Visibility {
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                float alpha = (float)animation.getAnimatedValue();
-                view.setAlpha(alpha);
+                float animatedValue = (float)animation.getAnimatedValue();
+
+                // ALPHA
+                view.setAlpha(animatedValue);
+
+                // TRANSLATION
+                float y = (1.0f - animatedValue) * -view.getMeasuredHeight();
+                view.setTranslationY(y);
             }
         });
 
@@ -31,7 +37,15 @@ public class CustomTransReenter extends Visibility {
 
     @Override
     public Animator createAnimator(ViewGroup sceneRoot, TransitionValues startValues, TransitionValues endValues) {
-        endValues.view.setAlpha(0.0f);
+
+        View view = endValues.view;
+
+        // ALPHA
+        view.setAlpha(0.0f);
+
+        // TRANSLATE
+        view.setTranslationY(-view.getMeasuredHeight());
+
         return super.createAnimator(sceneRoot, startValues, endValues);
     }
 }

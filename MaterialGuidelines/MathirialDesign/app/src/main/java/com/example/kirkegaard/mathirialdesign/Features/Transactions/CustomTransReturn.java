@@ -13,16 +13,21 @@ public class CustomTransReturn extends Visibility {
     }
 
     @Override
-    public Animator onAppear(ViewGroup sceneRoot, final View view, TransitionValues startValues, TransitionValues endValues) {
+    public Animator onDisappear(ViewGroup sceneRoot, final View view, TransitionValues startValues, TransitionValues endValues) {
 
-        //view.setTranslationX(view.getMeasuredWidth());
-
-        ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
+        ValueAnimator animator = ValueAnimator.ofFloat(0.0f, 1.0f);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                float alpha = (float)animation.getAnimatedValue();
+                float animatedValue = (float)animation.getAnimatedValue();
+
+                // ALPHA
+                float alpha = 1.0f - animatedValue;
                 view.setAlpha(alpha);
+
+                // TRANSLATE
+                float x = animatedValue * view.getMeasuredWidth();
+                view.setTranslationX(x);
             }
         });
 
@@ -31,7 +36,15 @@ public class CustomTransReturn extends Visibility {
 
     @Override
     public Animator createAnimator(ViewGroup sceneRoot, TransitionValues startValues, TransitionValues endValues) {
-        startValues.view.setAlpha(1.0f);
+
+        View view = startValues.view;
+
+        // ALPHA
+        view.setAlpha(1.0f);
+
+        // TRANSLATE
+        view.setTranslationX(0);
+
         return super.createAnimator(sceneRoot, startValues, endValues);
     }
 }
