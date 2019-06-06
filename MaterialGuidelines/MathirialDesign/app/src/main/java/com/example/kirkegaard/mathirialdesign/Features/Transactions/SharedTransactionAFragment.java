@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
+import android.transition.Slide;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,13 +53,24 @@ public class SharedTransactionAFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SharedTransactionBFragment simpleFragmentB = SharedTransactionBFragment.newInstance();
+
+                SharedTransactionBFragment simpleFragment = SharedTransactionBFragment.newInstance();
+                ///SharedTransactionAFragment simpleFragment = SharedTransactionAFragment.newInstance();
+
+                int targetId = R.id.fragment_a_btn;
+                TransHelper.AddSlideTransition(simpleFragment, targetId);
+
                 getFragmentManager()
                         .beginTransaction()
                         .addSharedElement(imageView, ViewCompat.getTransitionName(imageView))
                         .addToBackStack(TAG)
-                        .replace(R.id.content, simpleFragmentB)
+                        .replace(R.id.content, simpleFragment)
                         .commit();
+
+                TransitionInflater transInflater = TransitionInflater.from(getContext());
+                Transition trans = transInflater.inflateTransition(android.R.transition.move);
+                simpleFragment.setSharedElementEnterTransition(trans);
+                simpleFragment.setSharedElementReturnTransition(trans);
             }
         });
     }

@@ -22,4 +22,11 @@
         android:padding="16dp"
         android:text="This is a camera in fragment B" />
 
+    <Button
+        android:id="@+id/fragment_b_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Make transaction" />
+
 </LinearLayout>

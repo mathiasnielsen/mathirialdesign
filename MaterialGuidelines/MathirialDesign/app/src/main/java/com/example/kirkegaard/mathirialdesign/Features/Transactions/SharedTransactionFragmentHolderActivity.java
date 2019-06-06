@@ -12,9 +12,13 @@ public class SharedTransactionFragmentHolderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shared_transaction_fragment_holder);
 
+        SharedTransactionAFragment fragment = SharedTransactionAFragment.newInstance();
+        int targetId = R.id.fragment_a_btn;
+        TransHelper.AddSlideTransition(fragment, targetId);
+
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.content, SharedTransactionAFragment.newInstance())
+                .add(R.id.content, fragment)
                 .commit();
     }
 }

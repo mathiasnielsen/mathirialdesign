@@ -2,13 +2,19 @@ package com.example.kirkegaard.mathirialdesign.Features.Transactions;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
+import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.kirkegaard.mathirialdesign.R;
 
@@ -38,7 +44,7 @@ public class SharedTransactionBFragment extends Fragment {
         {
             TransitionInflater transInflater = TransitionInflater.from(getContext());
             Transition trans = transInflater.inflateTransition(android.R.transition.move);
-            setSharedElementEnterTransition(trans);
+            //setSharedElementEnterTransition(trans);
         }
     }
 
@@ -46,5 +52,37 @@ public class SharedTransactionBFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_shared_transaction_b, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        final ImageView imageView = (ImageView) view.findViewById(R.id.fragment_b_image);
+
+        Button button = (Button) view.findViewById(R.id.fragment_b_btn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                SharedTransactionAFragment simpleFragment = SharedTransactionAFragment.newInstance();
+
+                int targetId = R.id.fragment_b_btn;
+                TransHelper.AddSlideTransition(simpleFragment, targetId);
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .addSharedElement(imageView, ViewCompat.getTransitionName(imageView))
+                        .addToBackStack(SharedTransactionAFragment.TAG)
+                        .replace(R.id.content, simpleFragment)
+                        .commit();
+
+                TransitionInflater transInflater = TransitionInflater.from(getContext());
+                Transition trans = transInflater.inflateTransition(android.R.transition.move);
+                simpleFragment.setSharedElementEnterTransition(trans);
+                simpleFragment.setSharedElementReturnTransition(trans);
+            }
+        });
+
     }
 }
