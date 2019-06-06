@@ -1,7 +1,9 @@
 package com.example.kirkegaard.mathirialdesign.Features.Transactions;
 
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.example.kirkegaard.mathirialdesign.R;
 
@@ -18,7 +20,8 @@ public class SharedTransactionFragmentHolderActivity extends AppCompatActivity {
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.content, fragment)
+                .addToBackStack(SharedTransactionAFragment.TAG)
+                .replace(R.id.content, fragment)
                 .commit();
     }
 }

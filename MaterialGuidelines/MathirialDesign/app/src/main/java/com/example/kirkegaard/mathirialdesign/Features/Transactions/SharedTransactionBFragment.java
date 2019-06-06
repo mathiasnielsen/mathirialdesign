@@ -6,10 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
-import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +27,8 @@ import com.example.kirkegaard.mathirialdesign.R;
  */
 public class SharedTransactionBFragment extends Fragment {
 
+    private static int _counter;
+
     public SharedTransactionBFragment() {
         // Required empty public constructor
     }
@@ -46,17 +46,14 @@ public class SharedTransactionBFragment extends Fragment {
             Transition trans = transInflater.inflateTransition(android.R.transition.move);
             //setSharedElementEnterTransition(trans);
         }
+
+        _counter++;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_shared_transaction_b, container, false);
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+        View view =  inflater.inflate(R.layout.fragment_shared_transaction_b, container, false);
 
         final ImageView imageView = (ImageView) view.findViewById(R.id.fragment_b_image);
 
@@ -65,10 +62,11 @@ public class SharedTransactionBFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                SharedTransactionAFragment simpleFragment = SharedTransactionAFragment.newInstance();
+                //SharedTransactionAFragment simpleFragment = SharedTransactionAFragment.newInstance();
+                SharedTransactionBFragment simpleFragment = SharedTransactionBFragment.newInstance();
 
                 int targetId = R.id.fragment_b_btn;
-                TransHelper.AddSlideTransition(simpleFragment, targetId);
+                TransHelper.AddCustomTransition(simpleFragment, targetId);
 
                 getFragmentManager()
                         .beginTransaction()
@@ -78,11 +76,18 @@ public class SharedTransactionBFragment extends Fragment {
                         .commit();
 
                 TransitionInflater transInflater = TransitionInflater.from(getContext());
-                Transition trans = transInflater.inflateTransition(android.R.transition.move);
+                Transition trans = transInflater.inflateTransition(android.R.transition.fade);
                 simpleFragment.setSharedElementEnterTransition(trans);
                 simpleFragment.setSharedElementReturnTransition(trans);
             }
         });
+
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
     }
 }

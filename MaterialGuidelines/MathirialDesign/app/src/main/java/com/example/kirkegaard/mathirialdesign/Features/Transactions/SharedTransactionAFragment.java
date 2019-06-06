@@ -55,7 +55,7 @@ public class SharedTransactionAFragment extends Fragment {
             public void onClick(View v) {
 
                 SharedTransactionBFragment simpleFragment = SharedTransactionBFragment.newInstance();
-                ///SharedTransactionAFragment simpleFragment = SharedTransactionAFragment.newInstance();
+                ////SharedTransactionAFragment simpleFragment = SharedTransactionAFragment.newInstance();
 
                 int targetId = R.id.fragment_a_btn;
                 TransHelper.AddSlideTransition(simpleFragment, targetId);
@@ -64,8 +64,8 @@ public class SharedTransactionAFragment extends Fragment {
                         .beginTransaction()
                         .addSharedElement(imageView, ViewCompat.getTransitionName(imageView))
                         .addToBackStack(TAG)
-                        .replace(R.id.content, simpleFragment)
-                        .commit();
+                        .replace(R.id.content, simpleFragment, TAG)
+                        .commitAllowingStateLoss();
 
                 TransitionInflater transInflater = TransitionInflater.from(getContext());
                 Transition trans = transInflater.inflateTransition(android.R.transition.move);
